@@ -1,0 +1,17 @@
+GET http://localhost:8090/todo
+
+###
+
+GET http://localhost:8090/todo/1q2w
+
+###
+POST http://localhost:8090/todo
+
+###
+PATCH http://localhost:8090/todo/123abc
+
+###
+PUT http://localhost:8090/todo/1ba2c
+
+###
+DELETE http://localhost:8090/todo/delId12
