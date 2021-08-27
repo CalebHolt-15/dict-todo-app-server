@@ -1,7 +1,7 @@
 import "dotenv/config" //load env variables from .env
 import express from "express"
 import mongoose from "mongoose"
-import todolistRouter from "./routes/todolist.router.js" //wontwork w/o .js extnsn
+import todolistRouter from "./todo/todolist.router.js" //wontwork w/o .js extnsn
 
 const app = express()
 
