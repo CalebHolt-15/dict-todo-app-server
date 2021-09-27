@@ -1,7 +1,7 @@
 // import express from "express"
 import { Router } from "express"
-const router = Router()
 import { TodoList } from "./todolist.model.js" //.js must include
+const router = Router()
 
 //RESTFUL APIS
 //getall
@@ -21,7 +21,8 @@ router.get("/:id", getTodo, (req, res) => {
 })
 
 //add
-router.post("/", async (req, res) => {
+router.post("/addtodo", async (req, res) => {
+  console.log("addtodo")
   try {
     const todolist = await TodoList.create(req.body) //async:tillitget,thenonly itwillgoto nxtline{whilewaiting itwillexecotherlinesfrom diffrblock}
     console.log("req.body:", req.body)

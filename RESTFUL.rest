@@ -1,15 +1,17 @@
+####
+
 GET http://localhost:8090/todo
 
 ###
 
-GET http://localhost:8090/todo/612817fbc2e0c09deae09671
+GET http://localhost:8090/todo/612817c7c62048025846105a
 
 ###
-POST http://localhost:8090/todo
+POST http://localhost:8090/todo/addtodo
 Content-Type: application/json
 
 {
-    "name":"todo1 Project"
+    "name":"xyz"
 }
 
 ###
@@ -17,7 +19,7 @@ PATCH http://localhost:8090/todo/612828128085bd59e1456016
 Content-Type: application/json
 
 {
-    "name":"New Todo4"
+    "name":"testo"
 }
 
 
@@ -26,8 +28,11 @@ PUT http://localhost:8090/todo/612828128085bd59e1456016
 Content-Type: application/json
 
 {
-    "name":"New Todo12"
+    "name":"New"
 }
 
 ###
-DELETE http://localhost:8090/todo/612817fbc2e0c09deae09671 
+DELETE http://localhost:8090/todo/612828128085bd59e1456016 
+
+### 
+GET http://localhost:8090/todo
