@@ -21,11 +21,11 @@ app.use((req, res, next) => {
 
   next()
 })
- 
-app.disable("x-powered-by") 
+
+app.disable("x-powered-by")
 app.use(
   cors({
-    origin: "http://localhost:3001",
+    origin: "https://serene-villani-fc70e9.netlify.app",
     methods: ["GET", "PUT", "POST", "DELETE"],
     allowedHeaders: [
       "Origin",
@@ -34,7 +34,7 @@ app.use(
       "Access-Control-Allow-Headers",
       "Access-Control-Allow-Origin"
     ],
-    credentials: true 
+    credentials: true
   })
 )
 
