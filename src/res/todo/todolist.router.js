@@ -38,7 +38,7 @@ router.patch("/:id", getTodo, async (req, res) => {
     res.todo.name = req.body.name
   }
   if (req.body.date != null) {
-    res.todo.date = req.body.date
+    res.todo.date = req.body.date 
   }
   try {
     const UpdatedTodo = await res.todo.save()
