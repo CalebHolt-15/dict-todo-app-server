@@ -1,4 +1,4 @@
-####
+#### TODOLIST  ##################################################
 
 GET http://localhost:8090/todo
 
@@ -35,4 +35,33 @@ Content-Type: application/json
 DELETE http://localhost:8090/todo/612828128085bd59e1456016 
 
 ### 
-GET http://localhost:8090/todo
+########### EMPLOYEE #########################################
+GET http://localhost:8090/employee
+
+###
+POST http://localhost:8090/employee/addEmployee
+Content-Type: application/json
+
+{
+    "name":"donny",
+    "phone": "546"
+}
+
+###
+PATCH http://localhost:8090/employee/6166320138fcc5b3538924c8
+Content-Type: application/json
+
+{
+    "name":"newName"
+}
+
+###
+PUT http://localhost:8090/employee/6166320138fcc5b3538924c8
+Content-Type: application/json
+
+{
+    "name":"New"
+}
+
+###
+DELETE http://localhost:8090/employee/6166320138fcc5b3538924c8 
