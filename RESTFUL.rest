@@ -43,8 +43,10 @@ POST http://localhost:8090/employee/addEmployee
 Content-Type: application/json
 
 {
-    "name":"donny",
-    "phone": "546"
+    "firstname":"uom",
+    "lastname":"jone",
+    "phone": "456",
+    "email": "Mary@gmail.com"
 }
 
 ###
