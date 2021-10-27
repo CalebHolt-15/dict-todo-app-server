@@ -11,7 +11,7 @@ POST http://localhost:8090/todo/addtodo
 Content-Type: application/json
 
 {
-    "name":"xyz"
+    "name":"DEV"
 }
 
 ###
@@ -43,7 +43,7 @@ POST http://localhost:8090/employee/addEmployee
 Content-Type: application/json
 
 {
-    "firstname":"uom",
+    "firstname":"Jason",
     "lastname":"jone",
     "phone": "456",
     "email": "Mary@gmail.com"
